@@ -629,23 +629,25 @@ reservationForm.addEventListener("submit", function(event) {
   const fechaFormateada =
     `${partesFecha[2]}/${partesFecha[1]}/${partesFecha[0]}`;
 
-  const mensaje =
-`⚔️ *SOLICITUD DE RESERVA*
-*DÓNDE LA NONITA RESTOBAR*
+  
+const mensaje =
+`*SOLICITUD DE RESERVA*
+*DONDE LA NONITA RESTOBAR*
 
-👤 *Nombre:* ${nombre}
-📱 *Teléfono:* ${telefono}
-🎉 *Tipo de evento:* ${tipo}
-📅 *Fecha:* ${fechaFormateada}
-🕒 *Hora:* ${hora}
-👥 *Cantidad de personas:* ${personas}
+*Nombre:* ${nombre}
+*Telefono:* ${telefono}
+*Tipo de evento:* ${tipo}
+*Fecha:* ${fechaFormateada}
+*Hora:* ${hora}
+*Cantidad de personas:* ${personas}
 
-📝 *Comentarios:*
+*Comentarios:*
 ${comentarios || "Sin comentarios"}
 
-Hola, quisiera consultar la disponibilidad para realizar este evento en Dónde La Nonita.
+Hola, quisiera consultar la disponibilidad para realizar este evento en Donde La Nonita.
 
-Quedo atento/a a su confirmación. ¡Gracias!`;
+Quedo atento/a a su confirmacion. Muchas gracias.`;
+
 
   const enlace =
     "https://wa.me/" + WHATSAPP +
