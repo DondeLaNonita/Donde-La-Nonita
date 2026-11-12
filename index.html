@@ -321,12 +321,98 @@ dialog button {
 
 dialog::backdrop { background: #000d; }
 
+/* PREMIOS Y RECONOCIMIENTOS */
+
+.premios-seccion {
+  text-align: center;
+}
+
+.premios-seccion > .lead {
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.premios-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 320px), 1fr)
+  );
+  gap: 25px;
+  max-width: 850px;
+  margin: 35px auto 0;
+}
+
+.premio-card {
+  background: linear-gradient(145deg, #302015, #1a120f);
+  border: 1px solid #a77b42;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px #0007;
+  transition: transform .3s ease;
+}
+
+.premio-card:hover {
+  transform: translateY(-5px);
+}
+
+.premio-imagen {
+  background: #071b32;
+  text-align: center;
+}
+
+.premio-imagen img {
+  display: block;
+  width: 100%;
+  max-height: 470px;
+  object-fit: contain;
+}
+
+.premio-contenido {
+  padding: 30px;
+}
+
+.premio-anio {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.premio-contenido h3 {
+  color: var(--gold);
+  font-size: 27px;
+  margin: 10px 0 20px;
+}
+
+.premio-contenido p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.premio-estrellas {
+  color: var(--gold);
+  font-size: 27px;
+  letter-spacing: 8px;
+  margin: 22px 0;
+}
+
+.premio-frase {
+  font-style: italic;
+  font-size: 14px !important;
+}
+
 @media (max-width: 650px) {
   .about { grid-template-columns: 1fr; }
   section { padding: 45px 16px; }
   nav { justify-content: center; text-align: center; }
   .hero { padding-top: 30px; }
   .reservation { padding: 20px; }
+  .premio-contenido { padding: 22px; }
+  .premio-contenido h3 { font-size: 23px; }
 }
 </style>
 </head>
@@ -341,6 +427,7 @@ dialog::backdrop { background: #000d; }
 <a href="#carta">Carta</a>
 <a href="#eventos">Eventos</a>
 <a href="#reservas">Reservas</a>
+<a href="#premios">🏆 Premios</a>
 <a href="#nosotros">Nosotros</a>
 <a href="#contacto">Contacto</a>
 </div>
@@ -488,6 +575,60 @@ y responderá tu solicitud.
 </div>
 </section>
 
+<!-- PREMIOS Y RECONOCIMIENTOS -->
+
+<section id="premios" class="premios-seccion">
+
+<div class="eyebrow">Nuestro orgullo</div>
+
+<h2>🏆 Premios y reconocimientos</h2>
+
+<p class="lead">
+Nuestra pasión por la gastronomía y el sabor
+tradicional nos ha permitido recibir
+reconocimientos que forman parte
+de nuestra historia.
+</p>
+
+<div class="premios-grid">
+
+<article class="premio-card">
+
+<div class="premio-imagen">
+<img
+src="premio-2023.png"
+alt="Primer lugar a la Mejor Empanada de Pino 2023"
+loading="lazy">
+</div>
+
+<div class="premio-contenido">
+
+<span class="premio-anio">
+🥇 PRIMER LUGAR · 2023
+</span>
+
+<h3>La Mejor Empanada de Pino</h3>
+
+<p>
+Dónde La Nonita fue reconocida con el
+primer lugar a la Mejor Empanada de Pino 2023
+por Revista Wikén de El Mercurio.
+</p>
+
+<div class="premio-estrellas">
+★ ★ ★
+</div>
+
+<p class="premio-frase">
+Un reconocimiento a nuestra tradición,
+dedicación y pasión por el sabor de siempre.
+</p>
+
+</div>
+</article>
+</div>
+</section>
+
 <section id="nosotros" class="about">
 <div>
 <div class="eyebrow">Nuestra identidad</div>
@@ -589,8 +730,6 @@ Dónde La Nonita Restobar · Tradición de sabor ⚔
 <script>
 
 // NÚMERO DE WHATSAPP DEL RESTAURANTE
-// Puedes cambiarlo aquí más adelante.
-// Escribe el número sin + ni espacios.
 const WHATSAPP = "56921776588";
 
 // FORMULARIO DE RESERVAS
@@ -629,7 +768,6 @@ reservationForm.addEventListener("submit", function(event) {
   const fechaFormateada =
     `${partesFecha[2]}/${partesFecha[1]}/${partesFecha[0]}`;
 
-  
 const mensaje =
 `*SOLICITUD DE RESERVA*
 *DONDE LA NONITA RESTOBAR*
@@ -647,7 +785,6 @@ ${comentarios || "Sin comentarios"}
 Hola, quisiera consultar la disponibilidad para realizar este evento en Donde La Nonita.
 
 Quedo atento/a a su confirmacion. Muchas gracias.`;
-
 
   const enlace =
     "https://wa.me/" + WHATSAPP +
