@@ -793,10 +793,12 @@ Quedo atento/a a su confirmacion. Muchas gracias.`;
   window.location.href = enlace;
 });
 
-// CARTA DIGITAL
+// CARTA DIGITAL - 15 IMÁGENES
+// El premio está después de Colación.
 const pages = [
   ['Portada', 'Inicio'],
   ['Colación', 'Colación'],
+  ['Premio Mejor Empanada de Pino 2023', 'Premio'],
   ['Empanadas clásicas', 'Empanadas'],
   ['Empanadas de la casa', 'Empanadas'],
   ['Más empanadas', 'Empanadas'],
@@ -833,7 +835,11 @@ function render() {
 
   categories.forEach(cat => {
     const button = document.createElement('button');
-    button.textContent = cat;
+
+    // Muestra el emoji solamente en la categoría Premio.
+    button.textContent =
+      cat === 'Premio' ? '🏆 Premio' : cat;
+
     button.setAttribute('aria-pressed', String(cat === selected));
 
     button.onclick = () => {
