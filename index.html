@@ -134,6 +134,18 @@ h2 {
   color: white;
 }
 
+/* BOTÓN TIKTOK */
+
+.tiktok-btn {
+  background: #111111;
+  color: white;
+  border: 1px solid #25f4ee;
+}
+
+.tiktok-btn:hover {
+  background: #242424;
+}
+
 .whatsapp-btn {
   background: #25d366;
   color: #092b16;
@@ -436,8 +448,12 @@ dialog::backdrop { background: #000d; }
 
 <main>
 
+<!-- INICIO -->
+
 <div class="hero" id="inicio">
-<img src="logo-vikingo.webp" alt="Logo vikingo Dónde La Nonita">
+
+<img src="logo-vikingo.webp"
+alt="Logo vikingo Dónde La Nonita">
 
 <div class="eyebrow">
 Tradición de sabor · Espíritu vikingo
@@ -451,23 +467,36 @@ Un lugar para compartir buenos sabores
 y grandes momentos.
 </p>
 
-<a class="btn" href="#carta">⚔ Explorar nuestra carta</a>
-<a class="btn" href="#reservas">🎉 Reserva tu evento</a>
+<a class="btn" href="#carta">
+⚔ Explorar nuestra carta
+</a>
+
+<a class="btn" href="#reservas">
+🎉 Reserva tu evento
+</a>
 
 <a class="btn instagram-btn"
 href="https://www.instagram.com/dondelanonitarestobar/"
-target="_blank" rel="noopener noreferrer">
+target="_blank"
+rel="noopener noreferrer">
 📸 Nuestro Instagram
 </a>
-</div>
-  <a class="btn tiktok-btn"
+
+<a class="btn tiktok-btn"
 href="https://www.tiktok.com/@empanadasdondelanonita"
-target="_blank" rel="noopener noreferrer">
+target="_blank"
+rel="noopener noreferrer">
 🎵 Nuestro TikTok
 </a>
 
+</div>
+
+<!-- CARTA -->
+
 <section id="carta">
+
 <div class="eyebrow">Nuestro festín</div>
+
 <h2>🍖 Nuestra carta</h2>
 
 <p class="lead">
@@ -479,13 +508,19 @@ para ver la carta ampliada.
 
 <div class="filters" id="filters"></div>
 <div class="cards" id="cards"></div>
+
 </section>
 
+<!-- EVENTOS -->
+
 <section id="eventos">
+
 <div class="eyebrow">La próxima aventura</div>
+
 <h2>⚔ Próximos eventos</h2>
 
 <div class="event-panel">
+
 <h3>🔥 ¡Próximamente nuevas aventuras!</h3>
 
 <p>
@@ -501,16 +536,20 @@ horarios y novedades de nuestros eventos.
 
 <a class="btn instagram-btn"
 href="https://www.instagram.com/dondelanonitarestobar/"
-target="_blank" rel="noopener noreferrer">
+target="_blank"
+rel="noopener noreferrer">
 📸 Ver novedades en Instagram
 </a>
+
 </div>
 </section>
 
 <!-- RESERVAS DE EVENTOS -->
 
 <section id="reservas">
+
 <div class="eyebrow">Celebra con nosotros</div>
+
 <h2>🎉 Reserva tu evento</h2>
 
 <p class="lead">
@@ -521,21 +560,29 @@ por WhatsApp.
 </p>
 
 <div class="reservation">
+
 <h3>⚔ Solicitud de reserva</h3>
 
 <form id="reservationForm">
 
 <label for="nombre">Nombre completo *</label>
-<input type="text" id="nombre"
+<input
+type="text"
+id="nombre"
 placeholder="Tu nombre y apellido"
-required maxlength="100">
+required
+maxlength="100">
 
 <label for="telefono">Teléfono de contacto *</label>
-<input type="tel" id="telefono"
+<input
+type="tel"
+id="telefono"
 placeholder="+56 9 1234 5678"
-required maxlength="25">
+required
+maxlength="25">
 
 <label for="tipo">Tipo de evento *</label>
+
 <select id="tipo" required>
 <option value="">Selecciona una opción</option>
 <option value="Cumpleaños">🎂 Cumpleaños</option>
@@ -553,12 +600,20 @@ required maxlength="25">
 <input type="time" id="hora" required>
 
 <label for="personas">Cantidad de personas *</label>
-<input type="number" id="personas"
-min="1" max="500"
-placeholder="Ejemplo: 15" required>
+<input
+type="number"
+id="personas"
+min="1"
+max="500"
+placeholder="Ejemplo: 15"
+required>
 
-<label for="comentarios">Comentarios adicionales</label>
-<textarea id="comentarios"
+<label for="comentarios">
+Comentarios adicionales
+</label>
+
+<textarea
+id="comentarios"
 placeholder="Cuéntanos qué necesitas para tu celebración..."
 maxlength="1000"></textarea>
 
@@ -634,9 +689,14 @@ dedicación y pasión por el sabor de siempre.
 </div>
 </section>
 
+<!-- NOSOTROS -->
+
 <section id="nosotros" class="about">
+
 <div>
+
 <div class="eyebrow">Nuestra identidad</div>
+
 <h2>Tradición y aventura</h2>
 
 <p class="lead">
@@ -651,14 +711,20 @@ Conservamos nuestro logo tradicional
 porque representa nuestras raíces,
 nuestra historia y el sabor de siempre.
 </p>
+
 </div>
 
-<img src="logos.webp"
+<img
+src="logos.webp"
 alt="Logotipo tradicional y vikingo de Dónde La Nonita"
 loading="lazy">
+
 </section>
 
+<!-- CONTACTO -->
+
 <section id="contacto">
+
 <div class="contact">
 
 <h2>📍 Visítanos</h2>
@@ -702,9 +768,6 @@ rel="noopener noreferrer">
 <hr style="border:1px solid #805b31; margin:30px 0;">
 
 <h3 style="color:#e8b966;">
-
-
-<h3 style="color:#e8b966;">
 🔥 Síguenos en nuestras redes
 </h3>
 
@@ -727,21 +790,30 @@ rel="noopener noreferrer">
 🎵 TikTok: @empanadasdondelanonita
 </a>
 
-
-
 </div>
 </section>
 
 </main>
+
+<!-- PIE DE PÁGINA -->
 
 <footer>
 © <span id="year"></span>
 Dónde La Nonita Restobar · Tradición de sabor ⚔
 </footer>
 
+<!-- VISOR DE CARTA -->
+
 <dialog id="viewer" aria-label="Carta ampliada">
-<button id="close" type="button">Cerrar ✕</button>
-<img id="large" alt="Página ampliada de la carta">
+
+<button id="close" type="button">
+Cerrar ✕
+</button>
+
+<img
+id="large"
+alt="Página ampliada de la carta">
+
 </dialog>
 
 <script>
@@ -750,8 +822,12 @@ Dónde La Nonita Restobar · Tradición de sabor ⚔
 const WHATSAPP = "56921776588";
 
 // FORMULARIO DE RESERVAS
-const reservationForm = document.querySelector("#reservationForm");
-const fechaInput = document.querySelector("#fecha");
+
+const reservationForm =
+  document.querySelector("#reservationForm");
+
+const fechaInput =
+  document.querySelector("#fecha");
 
 function fechaLocal() {
   const hoy = new Date();
@@ -768,13 +844,26 @@ reservationForm.addEventListener("submit", function(event) {
 
   if (!reservationForm.reportValidity()) return;
 
-  const nombre = document.querySelector("#nombre").value.trim();
-  const telefono = document.querySelector("#telefono").value.trim();
-  const tipo = document.querySelector("#tipo").value;
-  const fecha = document.querySelector("#fecha").value;
-  const hora = document.querySelector("#hora").value;
-  const personas = document.querySelector("#personas").value;
-  const comentarios = document.querySelector("#comentarios").value.trim();
+  const nombre =
+    document.querySelector("#nombre").value.trim();
+
+  const telefono =
+    document.querySelector("#telefono").value.trim();
+
+  const tipo =
+    document.querySelector("#tipo").value;
+
+  const fecha =
+    document.querySelector("#fecha").value;
+
+  const hora =
+    document.querySelector("#hora").value;
+
+  const personas =
+    document.querySelector("#personas").value;
+
+  const comentarios =
+    document.querySelector("#comentarios").value.trim();
 
   if (fecha < fechaLocal()) {
     alert("Selecciona una fecha actual o futura.");
@@ -782,10 +871,11 @@ reservationForm.addEventListener("submit", function(event) {
   }
 
   const partesFecha = fecha.split("-");
+
   const fechaFormateada =
     `${partesFecha[2]}/${partesFecha[1]}/${partesFecha[0]}`;
 
-const mensaje =
+  const mensaje =
 `*SOLICITUD DE RESERVA*
 *DONDE LA NONITA RESTOBAR*
 
@@ -811,7 +901,8 @@ Quedo atento/a a su confirmacion. Muchas gracias.`;
 });
 
 // CARTA DIGITAL - 15 IMÁGENES
-// El premio está después de Colación.
+// EL PREMIO ESTÁ DESPUÉS DE COLACIÓN
+
 const pages = [
   ['Portada', 'Inicio'],
   ['Colación', 'Colación'],
@@ -848,16 +939,20 @@ function openImage(src, name) {
 }
 
 function render() {
+
   filters.replaceChildren();
 
   categories.forEach(cat => {
+
     const button = document.createElement('button');
 
-    // Muestra el emoji solamente en la categoría Premio.
     button.textContent =
       cat === 'Premio' ? '🏆 Premio' : cat;
 
-    button.setAttribute('aria-pressed', String(cat === selected));
+    button.setAttribute(
+      'aria-pressed',
+      String(cat === selected)
+    );
 
     button.onclick = () => {
       selected = cat;
@@ -870,18 +965,23 @@ function render() {
   cards.replaceChildren();
 
   pages.forEach(([name, cat], i) => {
+
     if (selected !== 'Todo' && selected !== cat) return;
 
-    const number = String(i + 1).padStart(2, '0');
+    const number =
+      String(i + 1).padStart(2, '0');
+
     const src = `carta-${number}.webp`;
 
     const article = document.createElement('article');
     article.className = 'card';
 
     const img = document.createElement('img');
+
     img.src = src;
     img.alt = `Carta Dónde La Nonita: ${name}`;
     img.loading = 'lazy';
+
     img.onclick = () => openImage(src, name);
 
     const content = document.createElement('div');
@@ -904,7 +1004,8 @@ function render() {
   });
 }
 
-document.querySelector('#close').onclick = () => dialog.close();
+document.querySelector('#close').onclick =
+  () => dialog.close();
 
 dialog.addEventListener('click', event => {
   if (event.target === dialog) dialog.close();
@@ -914,6 +1015,7 @@ document.querySelector('#year').textContent =
   new Date().getFullYear();
 
 render();
+
 </script>
 
 </body>
